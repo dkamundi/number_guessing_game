@@ -16,6 +16,18 @@
         <input type="number" id="guessInput" placeholder="Enter your guess">
         <button id="submitBtn">Submit</button>
         <div id="guessOutcome"></div>
+
+        <!-- Add a link to the login page -->
+        <a href="/login">Login</a>
+
+
+        <!-- Display the list of usernames -->
+        <ul>
+            {% for user in users %}
+            <li>{{ user.username }}</li>
+            {% endfor %}
+        </ul>
+        
     </div>
 
     <script src="1app.js"></script>
